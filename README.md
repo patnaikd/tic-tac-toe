@@ -1,6 +1,12 @@
 # Tic Tac Toe
 
-Creating using Chat GPT 4, using the following prompts
+Hosting URL: https://tic-tac-toe-by-chatgpt4.web.app
+
+Firebase console: https://console.firebase.google.com/project/tic-tac-toe-by-chatgpt4/overview
+
+
+
+## Creating using Chat GPT 4, using the following prompts
 
 Prompts:
 
@@ -27,6 +33,50 @@ commit the code to github
 ```
 
 There was a minor bug due to change in signature of calculateWinner() that had to be fixed manually.
+
+## Deploying to Firebase
+
+To deploy your Tic-Tac-Toe web application to Firebase Hosting, follow these steps:
+
+1. Install the Firebase CLI: If you haven't installed the Firebase CLI already, you can do so by running the following command:
+   ```
+   npm install -g firebase-tools
+   ```
+   This installs the Firebase CLI globally on your system.
+
+2. Sign in to your Firebase account: Sign in to your Google account associated with Firebase by running the following command:
+   ```
+   firebase login
+   ```
+   This will open a new browser window asking you to authorize the Firebase CLI with your Google account.
+
+3. Initialize Firebase in your project: In your terminal or command prompt, navigate to your project folder and run the following command to initialize Firebase in your project:
+   ```
+   firebase init
+   ```
+   You'll be prompted to select the Firebase features you'd like to set up for your project. Select "Hosting" by using the arrow keys and pressing the spacebar, then press Enter.
+
+4. Choose an existing Firebase project or create a new one: You'll be asked to select an existing Firebase project or create a new one. Choose the appropriate option and proceed.
+
+5. Configure your project: After selecting a project, you'll be prompted to configure your project for Firebase Hosting:
+
+   - For "What do you want to use as your public directory?", enter `build` (since this is where Create React App outputs the production build).
+   - For "Configure as a single-page app (rewrite all URLs to /index.html)?", type `y` or `yes` to ensure that all URLs will be redirected to `index.html`.
+   - For "Set up automatic builds and deploys with GitHub?", type `n` or `no` since we're not setting up automatic deployment in this example.
+
+6. Build your project for production: Run the following command to create an optimized production build of your React application:
+   ```
+   npm run build
+   ```
+
+7. Deploy your application: Deploy your application to Firebase Hosting by running the following command:
+   ```
+   firebase deploy
+   ```
+
+8. View your deployed application: After the deployment is successful, you'll see a "Hosting URL" in the terminal output. Visit this URL in your browser to view your deployed Tic-Tac-Toe web application.
+
+Your Tic-Tac-Toe web application is now deployed to Firebase Hosting!
 
 
 ---
