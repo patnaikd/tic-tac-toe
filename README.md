@@ -1,4 +1,37 @@
-# Getting Started with Create React App
+# Tic Tac Toe
+
+Creating using Chat GPT 4, using the following prompts
+
+Prompts:
+
+```
+Write a complete tic-tac-toe game web application using react
+
+rewrite content of src/App.css with the following styles:
+
+Increase the font size of X and O. Add a Play again button
+
+At the bottom of page, add "Created by Debprakash Patnaik" and "Copyright 2023-2024"
+
+detect end of game and enable playAgain
+
+Change title of page to "Tik-Tac-Toe"
+
+Change favicon to a tic tac toe icon
+
+Create an svg tic-tac-toe icon
+
+Change the color of the winning row or column
+
+commit the code to github
+```
+
+There was a minor bug due to change in signature of calculateWinner() that had to be fixed manually.
+
+
+---
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
