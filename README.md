@@ -30,6 +30,12 @@ Create an svg tic-tac-toe icon
 Change the color of the winning row or column
 
 commit the code to github
+
+Deploy it to Firebase hosting
+
+Should I add .firebase/hosting cache file to git?
+
+Should I ignore everything under .firebase ?
 ```
 
 There was a minor bug due to change in signature of calculateWinner() that had to be fixed manually.
